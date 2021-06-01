@@ -7,3 +7,6 @@ curl -X POST \
 # сгенерить псердорандомную строку
 openssl rand -base64 12
 openssl rand -hex 12
+
+# узнать процессы на определенном порту
+lsof -i :8084
