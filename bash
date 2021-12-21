@@ -1,4 +1,4 @@
-# загрузить файл на хост
+# загрузить файл 1.jpg на хост
 curl -X POST \
     -H "Content-Type: multipart/form-data" \
     -F file=@1.jpg \
