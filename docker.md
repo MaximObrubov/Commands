@@ -28,3 +28,7 @@ for instance:
     ```
         `/bin/ash` - for Alpine
         `/bin/bash` - for Debian/Ubuntu builds
+  - Get container user
+      ```
+        docker inspect $(docker ps -q) --format '{{.Config.User}} {{.Name}}'
+      ```
