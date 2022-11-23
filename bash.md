@@ -37,3 +37,9 @@ find . -type f -name "*.php" -exec chmod 0640 {} \;
 ```
 tar -xvzf example.tar.gz
 ```
+
+### extract .gz
+```
+gunzip -k file.gz
+```
+`-k` - option stays for the shorthand of `--keep` and keeps the file. Default command will delete archive while extracting
