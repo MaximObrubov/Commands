@@ -17,7 +17,7 @@ openssl rand -hex 12
 lsof -i :8084
 ```
 
-## выставить разрешения по умолчаню для ~/home директории
+### выставить разрешения по умолчаню для ~/home директории
 ```
 find . -type d -exec chmod 0755 {} \; 
 find . -type f -exec chmod 0644 {} \; 
@@ -31,4 +31,9 @@ find . -type f -print0 | xargs -0 chmod 644
 для специфичного расширения файлов
 ```
 find . -type f -name "*.php" -exec chmod 0640 {} \; 
+```
+
+### untar .tar.gz
+```
+tar -xvzf example.tar.gz
 ```
