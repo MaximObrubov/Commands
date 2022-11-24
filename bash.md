@@ -43,3 +43,9 @@ tar -xvzf example.tar.gz
 gunzip -k file.gz
 ```
 `-k` - option stays for the shorthand of `--keep` and keeps the file. Default command will delete archive while extracting
+
+### execute command in all subdirectories (not recursive)
+```
+for dir in */; do (cd "$dir" && git reset --hard); done
+```
+command looks like a not appropriate for terminal... but hey it's Linux! :) Linux is great
